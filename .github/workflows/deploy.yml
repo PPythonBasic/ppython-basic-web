@@ -17,20 +17,22 @@ jobs:
       #   with:
       #     version: 8
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - name: Install Bun.js
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: 20.x
-          cache: npm
+          version: 0.7.0
+
+      - name: lockfile-version 3 --frozen-lockfile
+        run: npm i --lockfile-version 3 --frozen-lockfile
 
       - name: Install dependencies
-        run: npm install
+        run: bun install
 
       - name: build
         env:
           BASE_PATH: "/${{ github.event.repository.name }}"
         run: |
-          npm run build
+          bun run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v2
