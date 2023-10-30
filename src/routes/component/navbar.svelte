@@ -1,5 +1,4 @@
 <script>
-  import { base } from "$app/paths";
 </script>
 
 <div class="navbar bg-base-300">
@@ -13,7 +12,7 @@
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="{base}/feedback">การตอบรับจากผู้เรียน</a></li>
+      <li><a href="/feedback">การตอบรับจากผู้เรียน</a></li>
     </ul>
   </div>
 </div>
