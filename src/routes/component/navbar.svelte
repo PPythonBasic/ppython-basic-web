@@ -4,7 +4,7 @@
 
 <div class="navbar bg-base-300">
   <div class="flex-1">
-    <a href="/" class="btn btn-ghost normal-case text-xl h-16">
+    <a href="{base}/" class="btn btn-ghost normal-case text-xl h-16">
       <div class="flex flex-col">
         <p>Ppython Basic</p>
         <p class="text-[12px]">เพราะพื้นฐานสำคัญที่สุด</p>
