@@ -1,0 +1,74 @@
+<script lang="ts">
+  const openModal = () => {
+    const modal = document.getElementById("my_modal_2") as HTMLDialogElement;
+    modal.showModal();
+  };
+</script>
+
+<div class="hero min-h-screen bg-base-200">
+  <div class="hero-content text-center">
+    <div class="max-w-md flex flex-col items-center gap-4">
+      <img
+        src="https://avatars.githubusercontent.com/u/129375745?s=200&v=4"
+        alt="logo"
+        class="w-32 rounded-full"
+      />
+      <h1 class="text-5xl font-bold">Ppython Basic</h1>
+      <p class="py-6">
+        สอนพื้นฐานการเขียนโปรแกรมด้วย Python เบื้องต้น
+        หรือจะให้ช่วยติวข้อสอบก็ได้หรือใครสนใจจะทำเว็บไซต์หรือโปรแกรม
+        ขึ้นเป็นของตัวเอง หรือเขียนบอท Discord , Line , Telegram
+        ก็สามารถมาเรียนพื้นฐานได้ ชั่วโมงละ 100 บาท หลังจากเรียน 2 ชั่วโมงขึ้นไป
+        ชมละ 60 บาท
+      </p>
+      <button class="btn btn-primary" on:click={openModal}
+        >รายเอียดที่สอน</button
+      >
+      <button
+        class="btn btn-success"
+        on:click={() => window.open("https://lin.ee/CbNYGle")}
+        >แอดไลน์ : @621jnpbb</button
+      >
+    </div>
+  </div>
+</div>
+
+<dialog id="my_modal_2" class="modal z-50">
+  <div class="modal-box">
+    <h3 class="font-bold text-2xl text-center">เนื้อหาที่จะสอน</h3>
+    <p class="py-2 font-bold text-lg">สอนพื้นฐานเบื้องต้นการเขียนโปรแกรม</p>
+    <p class="py-2 mx-8">วิธีการคิดแบบคอมพิวเตอร์</p>
+    <p class="py-2 mx-8">เข้าใจการทำงานของคอมพิวเตอร์เบื้องต้น</p>
+    <p class="py-2 mx-8">เข้าวิธีการแก้ปัญหา</p>
+    <p class="py-2 mx-8">รู้จักตัวแปรและตัวประเภทตัวแปร</p>
+    <p class="py-2 mx-8">รู้จักตัวดำเนินการ</p>
+    <p class="py-2 mx-8">รู้จักการกำหนดเงื่อนไข</p>
+    <p class="py-2 mx-8">รู้จักการใช้การวนซ้ำแบบต่างๆ</p>
+    <p class="py-2 mx-8">รู้จัก logic ต่างๆ</p>
+    <p class="py-2 mx-8">การใช้งานฟังก์ชั่นและการสร้างฟังค์ชั่น</p>
+    <p class="py-2 mx-8">การเขียนโปรแกรมเชิงวัตถุ</p>
+    <p class="py-2 mx-8">การใช้งานข้อมูลในไฟล์</p>
+    <p class="py-2 mx-8">การจัดการข้อผิดพลาด</p>
+    <p class="py-2 mx-8">การ import ไลบราลีต่างๆ และการติดตั้ง</p>
+    <p class="py-2 mx-8">การจัดการ error การใช้ try except</p>
+    <p class="py-2 font-bold text-lg">
+      เสริมเพิ่มเติม (ถ้าผู้เรียนสนใจเรียนต่อหลังจากปูพื้นฐาน)
+    </p>
+    <p class="py-2 mx-8">การใช้งาน GUI เบื้องต้น</p>
+    <p class="py-2 mx-8">การอ่าน document เอกสาร library ต่างๆ</p>
+    <p class="py-2 mx-8">การเรียกใช้ request เพื่อเรียกใช้งาน API</p>
+    <p class="py-2 mx-8">การทำงานเชื่อมกับฐานข้อมูล sqlite</p>
+    <p class="py-2 mx-8">การสร้าง Web App ด้วย Flask</p>
+    <p class="py-2 mx-8">การสร้าง Bot discord ด้วย Python</p>
+    <p class="py-2 mx-8">การสร้างโปรแกรมทำงานอัตโนมัติ</p>
+    <div class="m-4 flex justify-end">
+      <form method="dialog">
+        <button class="btn btn-primary">ปิด</button>
+      </form>
+    </div>
+  </div>
+
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
