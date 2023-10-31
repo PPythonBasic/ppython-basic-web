@@ -32,7 +32,7 @@
       <button class="btn btn-primary" on:click={openModal}
         >รายเอียดที่สอน</button
       >
-      <div class="flex gap-4 flex-wrap justify-center">
+      <div class="flex gap-2 flex-wrap justify-center">
         <button
           class="btn bg-[#06c755] text-white"
           on:click={() => window.open("https://lin.ee/CbNYGle")}
