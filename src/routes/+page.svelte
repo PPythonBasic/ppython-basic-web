@@ -40,7 +40,7 @@
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/768px-LINE_logo.svg.png"
             class="w-8 shadow-md rounded-xl"
             alt=""
-          />: @621jnpbb</button
+          />@621jnpbb</button
         >
         <button
           class="btn bg-[#000001] text-white"
@@ -49,7 +49,16 @@
             src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png"
             class="w-6 shadow-md rounded-xl"
             alt=""
-          />: @ppybasic_python</button
+          />@ppybasic_python</button
+        >
+        <button
+          class="btn bg-[#000001] text-white"
+          on:click={() => window.open("https://www.tiktok.com/@ppython_basic")}
+          ><img
+            src="https://img.freepik.com/premium-vector/tik-tok-logo_578229-290.jpg"
+            class="w-8 shadow-md rounded-xl"
+            alt=""
+          />รับสอนเขียนโปรแกรม Python</button
         >
       </div>
     </div>
