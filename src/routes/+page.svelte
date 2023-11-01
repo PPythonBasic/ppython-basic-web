@@ -3,9 +3,9 @@
   import Contact from "./component/contact.svelte";
 </script>
 
-<div class="hero min-h-screen bg-base-200">
+<div class="hero min-h-screen">
   <div class="hero-content text-center">
-    <div class="max-w-md flex flex-col items-center gap-4">
+    <div class="max-w-md flex flex-col items-center gap-4 justify-center">
       <img
         src="https://avatars.githubusercontent.com/u/129375745?s=200&v=4"
         alt="logo"
@@ -27,8 +27,9 @@
         หรือจะให้ช่วยติวข้อสอบก็ได้หรือใครสนใจจะทำเว็บไซต์หรือโปรแกรม
         ขึ้นเป็นของตัวเอง หรือเขียนบอท <b>Discord , Line , Telegram</b> ก็สามารถมาเรียนพื้นฐานได้
       </p>
-
-      <Contact />
     </div>
   </div>
+</div>
+<div class="flex flex-col items-center justify-center mb-16">
+  <p><Contact /></p>
 </div>
