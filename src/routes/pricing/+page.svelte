@@ -124,5 +124,5 @@
   <div class="m-8">
     <h1 class="text-2xl text-center text-white"><b>สนใจติดต่อ</b></h1>
   </div>
-  <Contact />
+  <p><Contact /></p>
 </div>
