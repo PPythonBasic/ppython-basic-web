@@ -18,7 +18,6 @@
       `https://ppythonbasic.github.io/feedback/feedback.json`
     );
     datas = await res.json();
-    console.log(datas);
   });
 </script>
 

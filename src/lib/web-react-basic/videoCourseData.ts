@@ -1,6 +1,4 @@
 import { writable } from 'svelte/store';
-const password = "ppython-basic23";
-
 const data = [
     {
       title: "บทที่ 1 ติดตั้งและใช้งาน Component เบื้องต้น",

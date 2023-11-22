@@ -35,8 +35,8 @@ jobs:
 
       - name: build
         env:
-          VITE_PASSWORD: ${{ secrets.VITE_PASSWORD }}
           BASE_PATH: "/${{ github.event.repository.name }}"
+          VITE_PASSWORD: ${{ secrets.VITE_PASSWORD }}
         run: |
           bun run build
 

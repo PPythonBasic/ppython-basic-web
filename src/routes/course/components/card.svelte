@@ -5,8 +5,7 @@
   export let img = "python-programming-language";
   export let details = "สอนพื้นฐานการเขียนโปรแกรมด้วย Python เบื้องต้น";
   export let path = "python-basic";
-  export let password = "ppython-basic23";
-
+  export let password = "";
   onMount(() => {
     // @ts-ignore
     let element;

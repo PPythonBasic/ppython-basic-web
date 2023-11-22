@@ -1,7 +1,7 @@
 <script>
   import { base } from "$app/paths";
   export let idModal = "my_modal_1";
-  export let passwordCheck = "ppython-basic23";
+  export let passwordCheck = "";
   export let pathLink = "python-basic";
   let passwordInput = "";
   // @ts-ignore

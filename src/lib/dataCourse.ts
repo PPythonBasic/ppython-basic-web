@@ -1,6 +1,5 @@
 import { writable } from 'svelte/store';
 const password = import.meta.env.VITE_PASSWORD;
-console.log(password)
 const data = [
     {
       title: "Python Basic",
