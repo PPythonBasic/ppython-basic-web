@@ -1,5 +1,9 @@
 <script>
   import ModalPassword from "./modal-password.svelte";
+  import passwordConfirm from "$lib/password";
+  import { browser } from "$app/environment";
+  import { goto } from "$app/navigation";
+
   import { onMount } from "svelte";
   export let title = "Python Basic";
   export let img = "python-programming-language";
@@ -14,8 +18,14 @@
     btn = document.getElementById(`modalPassword${path}-btn`);
     // @ts-ignore
     btn.addEventListener("click", () => {
-      // @ts-ignore
-      element.showModal();
+      if (browser) {
+        if (localStorage.getItem("password") === $passwordConfirm) {
+          goto(`/course/${path}`);
+        } else {
+          // @ts-ignore
+          element.showModal();
+        }
+      }
     });
   });
 </script>
