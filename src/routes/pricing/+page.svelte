@@ -3,6 +3,10 @@
   import Contact from "../component/contact.svelte";
 </script>
 
+<svelte:head>
+  <title>ราคา</title>
+</svelte:head>
+
 <div class="mt-14 flex items-center justify-center">
   <img
     src="https://avatars.githubusercontent.com/u/129375745?s=200&v=4"

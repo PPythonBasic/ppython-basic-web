@@ -22,6 +22,9 @@
   });
 </script>
 
+<svelte:head>
+  <title>การตอบรับ</title>
+</svelte:head>
 <div class="m-12">
   <h1 class="text-3xl text-center"><b>การตอบรับจากผู้เรียน</b></h1>
 </div>

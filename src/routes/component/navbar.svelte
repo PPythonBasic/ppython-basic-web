@@ -13,7 +13,8 @@
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="{base}/pricing" class="text-md"><b>ราคา</b></a></li>
+      <li><a href="{base}/pricing" class="text-md"><b>ราคา</b> </a></li>
+      <li><a href="{base}/course" class="text-md"><b>บทเรียน</b> </a></li>
       <li>
         <a href="{base}/feedback" class="text-md"><b>การตอบรับจากผู้เรียน</b></a
         >
