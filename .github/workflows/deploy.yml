@@ -4,6 +4,9 @@ on:
   push:
     branches: "master"
 
+env:
+  VITE_PASSWORD: ${{ secrets.VITE_PASSWORD }}
+
 jobs:
   build_site:
     runs-on: ubuntu-latest
