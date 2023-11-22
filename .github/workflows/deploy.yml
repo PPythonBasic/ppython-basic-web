@@ -4,8 +4,10 @@ on:
   push:
     branches: "master"
 
-env:
-  VITE_PASSWORD: ${{ secrets.VITE_PASSWORD }}
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build_site:
@@ -33,6 +35,7 @@ jobs:
 
       - name: build
         env:
+          VITE_PASSWORD: ${{ secrets.VITE_PASSWORD }}
           BASE_PATH: "/${{ github.event.repository.name }}"
         run: |
           bun run build
