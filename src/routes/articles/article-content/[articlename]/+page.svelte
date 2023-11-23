@@ -4,12 +4,7 @@
   import SvelteMarkdown from "svelte-markdown";
   const params = $page.params.articlename;
   import markdownList from "$lib/data/markdown/markdownList";
-  import {
-    IconArticle,
-    IconHome,
-    IconTextCaption,
-    IconTextColor,
-  } from "@tabler/icons-svelte";
+  import { IconArticle, IconHome, IconTextCaption } from "@tabler/icons-svelte";
 </script>
 
 {#each $markdownList as { title, path, source }}

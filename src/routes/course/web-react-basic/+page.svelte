@@ -4,8 +4,15 @@
   import videoCourseData from "$lib/web-react-basic/videoCourseData";
   import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
-  import VideoConent from "../components/video-conent.svelte";
+  import VideoContent from "../components/video-content.svelte";
   import { base } from "$app/paths";
+  import reactHomeWorkMarkDown from "$lib/web-react-basic/markdownHomeworkList";
+
+  $videoCourseData.forEach((obj, index) => {
+    obj.data = $reactHomeWorkMarkDown[index];
+  });
+
+  console.log($videoCourseData);
 
   if (browser) {
     if (localStorage.getItem("password") != $passwordConfirm) {
@@ -16,7 +23,7 @@
 
 <MetaTitle title="Web React Basic" />
 <div class="flex flex-col items-center m-4">
-  {#each $videoCourseData as { title, linkVideo, homework }}
-    <VideoConent {title} {linkVideo} {homework} />
+  {#each $videoCourseData as { title, linkVideo, homework, data }}
+    <VideoContent {title} {linkVideo} {homework} {data} />
   {/each}
 </div>

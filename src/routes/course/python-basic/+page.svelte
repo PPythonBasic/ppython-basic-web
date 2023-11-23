@@ -2,7 +2,7 @@
   import MetaTitle from "../components/meta-title.svelte";
   import passwordConfirm from "$lib/password";
   import videoCourseData from "$lib/python-basic/videoCourseData";
-  import VideoConent from "../components/video-conent.svelte";
+  import VideoContent from "../components/video-content.svelte";
   import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
 
@@ -16,6 +16,6 @@
 <MetaTitle title="Python Basic" />
 <div class="flex flex-col items-center m-4">
   {#each $videoCourseData as { title, linkVideo, homework }}
-    <VideoConent {title} {linkVideo} {homework} />
+    <VideoContent {title} {linkVideo} {homework} />
   {/each}
 </div>

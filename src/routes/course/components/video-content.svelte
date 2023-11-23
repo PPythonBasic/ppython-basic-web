@@ -1,7 +1,9 @@
 <script>
+  import SvelteMarkdown from "svelte-markdown";
   export let title = "sdds";
   export let linkVideo = "qXY7HDyX1Qo";
   export let homework = "";
+  export let data = "";
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -33,9 +35,11 @@
           การบ้าน {title}
         </div>
         <div
-          class="collapse-content bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content"
+          class="collapse-content bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content flex items-center justify-center"
         >
-          <p class="p-6 bg-base-100 rounded-box">{homework}</p>
+          <p class="p-6 bg-base-100 rounded-box prose lg:prose-xl">
+            <SvelteMarkdown source={data} />
+          </p>
         </div>
       </div>
     </div>
