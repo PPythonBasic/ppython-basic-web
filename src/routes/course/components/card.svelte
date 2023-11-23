@@ -3,6 +3,7 @@
   import passwordConfirm from "$lib/password";
   import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
+  import { base } from "$app/paths";
 
   import { onMount } from "svelte";
   export let title = "Python Basic";
@@ -20,7 +21,7 @@
     btn.addEventListener("click", () => {
       if (browser) {
         if (localStorage.getItem("password") === $passwordConfirm) {
-          goto(`/course/${path}`);
+          goto(`${base}/course/${path}`);
         } else {
           // @ts-ignore
           element.showModal();
