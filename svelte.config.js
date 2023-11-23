@@ -18,6 +18,14 @@ const config = {
       precompress: false,
       strict: true,
     }),
+    prerender: {
+      // use relative URLs similar to an anchor tag <a href="/test/1"></a>
+      // do not include group layout folders in the path such as /(group)/test/1
+      entries: [
+        "/articles/article-content/commit-github",
+        "/articles/article-content/format-string-python",
+      ],
+    },
     paths: {
       base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
     },
