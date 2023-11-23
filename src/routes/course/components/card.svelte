@@ -57,8 +57,14 @@
       <p>{details}</p>
     {/if}
 
-    <a class="btn btn-primary btn-sm w-full" id="modalPassword{path}-btn"
-      >เข้าเรียน</a
+    <a
+      class="btn btn-primary btn-sm w-full text-white {dataImg === ''
+        ? 'btn-disabled'
+        : ''}"
+      id="modalPassword{path}-btn"
+      aria-disabled="true"
+      tabindex="-1"
+      role="button">เข้าเรียน</a
     >
   </div>
 </div>
