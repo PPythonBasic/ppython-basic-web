@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+pre {
+    @apply bg-primary;
+    @apply text-white;
+}
+
+p code,
+li code {
+    @apply bg-base-300 p-1 rounded-md px-2;
+}
+
+a {
+    @apply text-base-content hover:text-primary;
+}

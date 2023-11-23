@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import ModalPassword from "./modal-password.svelte";
   import passwordConfirm from "$lib/password";
   import { browser } from "$app/environment";
@@ -11,6 +11,13 @@
   export let details = "สอนพื้นฐานการเขียนโปรแกรมด้วย Python เบื้องต้น";
   export let path = "python-basic";
   export let password = "";
+
+  let dataImg: string = "";
+  onMount(async () => {
+    dataImg = await fetch(
+      `https://source.unsplash.com/random/400x600?${img},programming,code`
+    ).then((x) => x.url);
+  });
   onMount(() => {
     // @ts-ignore
     let element;
@@ -35,15 +42,21 @@
   class="card card-compact w-96 h-64 lg:h-96 bg-base-100 shadow-xl border border-base-content"
 >
   <figure>
-    <img
-      src="https://source.unsplash.com/random/600x400?{img}"
-      alt={title}
-      class="w-full"
-    />
+    {#if dataImg === ""}
+      <div class="skeleton w-full h-36"></div>
+    {:else}
+      <img src={dataImg} alt={title} class="w-full" />
+    {/if}
   </figure>
   <div class="card-body items-center lg:items-start">
-    <h2 class="card-title">{title}</h2>
-    <p>{details}</p>
+    {#if dataImg === ""}
+      <div class="skeleton w-64 h-4"></div>
+      <div class="skeleton w-full h-3 my-3"></div>
+    {:else}
+      <h2 class="card-title">{title}</h2>
+      <p>{details}</p>
+    {/if}
+
     <a class="btn btn-primary btn-sm w-full" id="modalPassword{path}-btn"
       >เข้าเรียน</a
     >
