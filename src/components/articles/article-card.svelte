@@ -14,8 +14,8 @@
 </script>
 
 {#if data === ""}
-  <div class="flex flex-col gap-4 w-full">
-    <div class="skeleton h-32 w-full"></div>
+  <div class="flex flex-col gap-4 w-full lg:h-96">
+    <div class="skeleton h-32 w-full lg:h-96"></div>
     <div class="skeleton h-4 w-4/5"></div>
     <div class="skeleton h-4 w-full"></div>
     <div class="skeleton h-12 w-full"></div>

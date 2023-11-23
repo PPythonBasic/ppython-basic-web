@@ -43,15 +43,15 @@
 >
   <figure>
     {#if dataImg === ""}
-      <div class="skeleton w-full h-36"></div>
+      <div class="skeleton w-full h-36 lg:h-96"></div>
     {:else}
       <img src={dataImg} alt={title} class="w-full" />
     {/if}
   </figure>
   <div class="card-body items-center lg:items-start">
     {#if dataImg === ""}
-      <div class="skeleton w-64 h-4"></div>
-      <div class="skeleton w-full h-3 my-3"></div>
+      <div class="skeleton w-60 h-3 my-1"></div>
+      <div class="skeleton w-full h-3 my-1"></div>
     {:else}
       <h2 class="card-title">{title}</h2>
       <p>{details}</p>
