@@ -5,10 +5,11 @@
   import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
   import VideoConent from "../components/video-conent.svelte";
+  import { base } from "$app/paths";
 
   if (browser) {
     if (localStorage.getItem("password") != $passwordConfirm) {
-      goto("/course");
+      goto(`${base}/course`);
     }
   }
 </script>
