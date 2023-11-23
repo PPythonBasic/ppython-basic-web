@@ -28,12 +28,12 @@
       >
         <input type="checkbox" class="peer" />
         <div
-          class="collapse-title bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-secondary-content"
+          class="collapse-title bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content"
         >
           การบ้าน {title}
         </div>
         <div
-          class="collapse-content bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-secondary-content"
+          class="collapse-content bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content"
         >
           <p class="p-6 bg-base-100 rounded-box">{homework}</p>
         </div>
