@@ -11,7 +11,38 @@
       </div>
     </a>
   </div>
-  <div class="flex-none">
+  <div class="navbar-end lg:hidden">
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost btn-circle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h7"
+          /></svg
+        >
+      </label>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content mt-[10px] z-[1] p-2 shadow rounded-box w-52 bg-base-100 border"
+      >
+        <li><a href="{base}/pricing" class="text-md"><b>ราคา</b> </a></li>
+        <li><a href="{base}/course" class="text-md"><b>บทเรียน</b> </a></li>
+        <li>
+          <a href="{base}/feedback" class="text-md"
+            ><b>การตอบรับจากผู้เรียน</b></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex-none hidden lg:block">
     <ul class="menu menu-horizontal px-1">
       <li><a href="{base}/pricing" class="text-md"><b>ราคา</b> </a></li>
       <li><a href="{base}/course" class="text-md"><b>บทเรียน</b> </a></li>

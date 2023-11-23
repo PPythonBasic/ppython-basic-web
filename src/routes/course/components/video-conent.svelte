@@ -5,7 +5,7 @@
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<div tabindex="0" class="collapse bg-base-200 w-[30rem]">
+<div tabindex="0" class="collapse bg-base-200">
   <input type="checkbox" />
   <div class="collapse-title text-xl font-medium">
     <h1 class="text-xl">
