@@ -10,6 +10,11 @@ const data = [
     linkVideo: "wRzHHIAYWK8",
     homework: "true",
   },
+  {
+    title: "บทที่ 3 การใช้ condition เงื่อนไข if else",
+    linkVideo: "S-LEVyCPvrQ",
+    homework: "true",
+  },
 
 
 

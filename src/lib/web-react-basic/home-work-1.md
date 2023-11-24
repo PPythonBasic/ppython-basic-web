@@ -1,4 +1,4 @@
-- สร้าง Component เพิ่มเติมคือ Hi.jsx และ HelloTH.jsx
+- สร้าง Component เพิ่มเติมคือ `Hi.jsx` และ `HelloTH.jsx`
 - Component `Hi` มีรายละเอียดดังนี้
   - มี props 1 ตัวชื่อว่า `nameUser`
   - แสดงข้อความออกมาโดยใช้ `<p>Hi nameUser</p>`
