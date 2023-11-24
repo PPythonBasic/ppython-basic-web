@@ -22,7 +22,7 @@
 </script>
 
 <MetaTitle title="Web React Basic" />
-<div class="flex flex-col items-center m-4">
+<div class="flex flex-col max-w-sm lg:max-w-full items-center m-4">
   {#each $videoCourseData as { title, linkVideo, homework, data }}
     <VideoContent {title} {linkVideo} {homework} {data} />
   {/each}

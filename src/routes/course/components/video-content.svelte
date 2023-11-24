@@ -17,7 +17,7 @@
   <div class="collapse-content">
     <div class="flex flex-col gap-2 items-center">
       <iframe
-        class="w-full lg:w-[60rem] aspect-square lg:aspect-video rounded-lg"
+        class="w-full lg:max-w-full lg:w-[60rem] aspect-square lg:aspect-video rounded-lg"
         src="https://www.youtube.com/embed/{linkVideo}"
         frameborder="0"
         allowfullscreen
@@ -25,21 +25,23 @@
       />
 
       <div
-        class="collapse bg-base-200 lg:w-[60rem]"
+        class="collapse bg-base-200 max-w-xs lg:max-w-full lg:w-[60rem]"
         style="display: {homework === '' ? 'none' : ''}"
       >
         <input type="checkbox" class="peer" />
         <div
           class="collapse-title bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content"
         >
-          การบ้าน {title}
+          <h1 class="whitespace-normal">การบ้าน {title}</h1>
         </div>
         <div
-          class="collapse-content bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content flex items-center justify-center"
+          class="collapse-content bg-primary max-w-xs lg:max-w-full text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content flex items-center justify-center"
         >
-          <p class="p-6 bg-base-100 rounded-box prose lg:prose-xl">
-            <SvelteMarkdown source={data} />
-          </p>
+          <div class="bg-base-100 rounded-box prose lg:prose-xl">
+            <div class="px-[11rem] lg:px-4 overflow-x-auto">
+              <SvelteMarkdown source={data} />
+            </div>
+          </div>
         </div>
       </div>
     </div>

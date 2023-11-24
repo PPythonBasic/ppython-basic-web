@@ -32,7 +32,7 @@
         </ul>
       </div>
     </div>
-    <article class="prose-sm lg:prose-xl m-4">
+    <article class="prose-sm w-[20rem] lg:w-auto overflow-auto lg:prose-xl m-4">
       <SvelteMarkdown {source} />
     </article>
   {/if}
