@@ -8,7 +8,7 @@
 <div class="flex flex-row w-96 justify-end my-4">
   <h1 class="text-sm">จำนวน {$markdownList.length} บทความ</h1>
 </div>
-<div class="flex flex-col">
+<div class="flex flex-col items-center justify-center">
   {#each $markdownList as { title, path }}
     <ArticleCard {title} img={path} pathToGo={path} />
     <div class="divider w-96"></div>

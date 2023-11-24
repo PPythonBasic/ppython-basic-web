@@ -39,7 +39,7 @@
 </script>
 
 <div
-  class="card card-compact w-96 h-64 lg:h-96 bg-base-100 shadow-xl border border-base-content"
+  class="card card-compact w-full lg:w-96 h-64 lg:h-96 bg-base-100 shadow-xl border border-base-content"
 >
   <figure>
     {#if dataImg === ""}
