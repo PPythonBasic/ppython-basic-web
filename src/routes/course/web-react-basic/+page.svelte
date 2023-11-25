@@ -12,8 +12,6 @@
     obj.data = $reactHomeWorkMarkDown[index];
   });
 
-  console.log($videoCourseData);
-
   if (browser) {
     if (localStorage.getItem("password") != $passwordConfirm) {
       goto(`${base}/course`);

@@ -15,6 +15,11 @@ const data = [
     linkVideo: "S-LEVyCPvrQ",
     homework: "true",
   },
+  {
+    title: "บทที่ 4 การใช้ loop ใน react ด้วย map",
+    linkVideo: "IEjEq-d9K2A",
+    homework: "true",
+  },
 
 
 
