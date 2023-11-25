@@ -10,8 +10,17 @@ pre {
 p code,
 li code {
     @apply bg-base-300 p-1 rounded-md px-2;
+
 }
 
 a {
     @apply text-base-content hover:text-primary;
+}
+
+article img {
+    @apply w-[50rem] rounded-lg;
+}
+
+article li {
+    @apply list-disc;
 }
