@@ -10,6 +10,7 @@
   on:click={() => {
     window.location.href = href;
   }}
+  class="o-underline hover:underline hover:cursor-pointer"
 >
   {text}
 </a>
