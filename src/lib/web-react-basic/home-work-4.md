@@ -1,6 +1,6 @@
 - สร้างตัวแปร `const listStudent` สำหรับรายชื่อนักเรียน เช่น
 
-```js
+```jsx
 const listStudent = [
   {
     name: "Danai",

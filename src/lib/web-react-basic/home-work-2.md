@@ -6,7 +6,7 @@
 
 - `App.jsx` ให้ props เป็นหมวดอาหารเช่น steak และแสดง
 
-```
+```jsx
 <CardImage2 titleImg="steak" DetailImg="อาหารสเต็ก" nameImg="steak" />
 <CardImage2 titleImg="pizza" DetailImg="อาหารพิซซ่า" nameImg="pizza" />
 <CardImage2 titleImg="barbecue" DetailImg="อาหารบาร์บีคิว" nameImg="barbecue" />

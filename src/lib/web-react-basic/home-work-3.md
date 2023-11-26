@@ -8,7 +8,7 @@
 
 - หน้า `App.jsx` จะต้องมีการใช้ component ในลักษณะนี้
 
-```
+```jsx
 <BoxText idText={} nameText={} isOpenText={} />
 <BoxText idText={} nameText={} isOpenText={} />
 <BoxText idText={} nameText={} isOpenText={} />
