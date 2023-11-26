@@ -5,6 +5,11 @@
   import VideoContent from "../components/video-content.svelte";
   import { browser } from "$app/environment";
   import { goto } from "$app/navigation";
+  import pythonBasicContent from "$lib/python-basic/markdownContentList";
+
+  $videoCourseData.forEach((obj, index) => {
+    obj.data = $pythonBasicContent[index];
+  });
 
   if (browser) {
     if (localStorage.getItem("password") != $passwordConfirm) {
@@ -12,13 +17,6 @@
     }
   }
 </script>
-
-<MetaTitle title="Python Basic" />
-<div class="flex flex-col items-center m-4">
-  {#each $videoCourseData as { title, linkVideo, homework }}
-    <VideoContent {title} {linkVideo} {homework} />
-  {/each}
-</div>
 
 <svelte:head>
   <link
@@ -35,3 +33,10 @@
     }, 503);
   </script>
 </svelte:head>
+
+<MetaTitle title="Python Basic" />
+<div class="flex flex-col items-center m-4">
+  {#each $videoCourseData as { title, linkVideo, homework, data }}
+    <VideoContent {title} {linkVideo} {homework} {data} />
+  {/each}
+</div>

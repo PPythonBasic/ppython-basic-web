@@ -44,6 +44,27 @@
           </div>
         </div>
       </div>
+
+      <div
+        class="collapse bg-base-200 max-w-xs lg:max-w-full lg:w-[60rem]"
+        style="display: {homework === '' ? '' : 'none'}"
+      >
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-primary text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content"
+        >
+          <h1 class="whitespace-normal">อธิบายเพิ่มเติม {title}</h1>
+        </div>
+        <div
+          class="collapse-content bg-primary max-w-xs lg:max-w-full text-primary-content peer-checked:bg-base-200 peer-checked:text-base-content flex items-center justify-center"
+        >
+          <div class="bg-base-100 rounded-box prose lg:prose-xl">
+            <div class="px-[11rem] lg:px-4 overflow-x-auto">
+              <SvelteMarkdown source={data} />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
