@@ -6,8 +6,14 @@ import react2 from "$lib/data/markdown/reacts/react2.md?raw";
 import react3 from "$lib/data/markdown/reacts/react3.md?raw";
 import react4 from "$lib/data/markdown/reacts/react4.md?raw";
 import react5 from "$lib/data/markdown/reacts/react5.md?raw";
+import react6 from "$lib/data/markdown/reacts/react6.md?raw";
 
 const articlesMarkDown = [
+    {
+        title: "การฝัง JavaScript ใน JSX",
+        path: "react6",
+        source: react6
+    },
     {
         title: "React: ความแตกต่างระหว่าง JSX และ HTML",
         path: "react5",
