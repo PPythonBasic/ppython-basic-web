@@ -5,6 +5,7 @@
   const params = $page.params.articlename;
   import markdownList from "$lib/data/markdown/markdownList";
   import { IconArticle, IconHome, IconTextCaption } from "@tabler/icons-svelte";
+  import Link from "../../../../renderers/Link.svelte";
 </script>
 
 <svelte:head>
@@ -51,7 +52,7 @@
     <article
       class="prose-sm w-auto xl:w-[70rem] flex flex-col justify-center overflow-auto lg:prose-lg m-4"
     >
-      <SvelteMarkdown {source} />
+      <SvelteMarkdown {source} renderers={{ link: Link }} />
     </article>
   {/if}
 {/each}
