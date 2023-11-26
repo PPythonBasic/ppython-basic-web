@@ -1,12 +1,18 @@
 import { writable } from 'svelte/store';
 import commit_github from "$lib/data/markdown/commit-github.md?raw";
 import format_string_python from "$lib/data/markdown/format-string-python.md?raw";
-import react1 from "$lib/data/markdown/react1.md?raw";
-import react2 from "$lib/data/markdown/react2.md?raw";
-import react3 from "$lib/data/markdown/react3.md?raw";
-import react4 from "$lib/data/markdown/react4.md?raw";
+import react1 from "$lib/data/markdown/reacts/react1.md?raw";
+import react2 from "$lib/data/markdown/reacts/react2.md?raw";
+import react3 from "$lib/data/markdown/reacts/react3.md?raw";
+import react4 from "$lib/data/markdown/reacts/react4.md?raw";
+import react5 from "$lib/data/markdown/reacts/react5.md?raw";
 
 const articlesMarkDown = [
+    {
+        title: "React: ความแตกต่างระหว่าง JSX และ HTML",
+        path: "react5",
+        source: react5
+    },
     {
         title: "React : รู้เบื้องต้นเกี่ยวกับ JSX",
         path: "react4",
