@@ -7,6 +7,22 @@
   import { IconArticle, IconHome, IconTextCaption } from "@tabler/icons-svelte";
 </script>
 
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.min.css"
+  />
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+  ></script>
+  <script>
+    setTimeout(() => {
+      hljs.highlightAll();
+    }, 1000);
+  </script>
+</svelte:head>
+
 {#each $markdownList as { title, path, source }}
   {#if path === params}
     <div class="flex flex-row w-full px-4 justify-start lg:justify-center">

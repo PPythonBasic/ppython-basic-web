@@ -28,6 +28,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tabler/icons-svelte": "^2.40.0",
-		"svelte-markdown": "^0.4.0"
+		"svelte-markdown": "^0.4.0",
+		"svelte-prism": "^1.1.6"
 	}
 }

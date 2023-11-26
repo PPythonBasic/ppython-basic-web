@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-pre {
-    @apply bg-primary;
-    @apply text-white;
+pre code.hljs {
+    @apply p-4 rounded-lg;
 }
+
 
 p code,
 li code {
