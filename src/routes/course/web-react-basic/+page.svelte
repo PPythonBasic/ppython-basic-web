@@ -25,3 +25,19 @@
     <VideoContent {title} {linkVideo} {homework} {data} />
   {/each}
 </div>
+
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.min.css"
+  />
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+  ></script>
+  <script>
+    setTimeout(() => {
+      hljs.highlightAll();
+    }, 503);
+  </script>
+</svelte:head>

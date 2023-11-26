@@ -19,7 +19,7 @@
   <script>
     setTimeout(() => {
       hljs.highlightAll();
-    }, 1);
+    }, 503);
   </script>
 </svelte:head>
 
