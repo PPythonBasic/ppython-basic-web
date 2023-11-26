@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 pre {
     @apply bg-primary;
     @apply text-white;
@@ -13,12 +14,16 @@ li code {
 
 }
 
-a {
-    @apply text-base-content hover:text-primary;
+article a {
+    @apply text-primary hover:text-secondary underline;
+}
+
+article h1 {
+    @apply text-primary py-4;
 }
 
 article img {
-    @apply w-[50rem] rounded-lg;
+    @apply w-[50rem] rounded-lg object-contain;
 }
 
 article li {

@@ -1,29 +1,20 @@
-- สร้างตัวแปร `const cheatList` ดังนี้
+- สร้างตัวแปร `const listStudent` สำหรับรายชื่อนักเรียน เช่น
 
-```
-let cheatList = [
-    {
-      id: 1,
-      name: "XL",
-      isOpen: false,
-    },
-    {
-      id: 2,
-      name: "L",
-      isOpen: true,
-    },
-    {
-      id: 3,
-      name: "XXL",
-      isOpen: true,
-    },
-    {
-      id: 4,
-      name: "M",
-      isOpen: false,
-    },
-  ];
+```js
+const listStudent = [
+  {
+    name: "Danai",
+    score: 80,
+  },
+  {
+    name: "Samai",
+    score: 50,
+  },
+
+  // เพิ่มอีก 18 คน
+];
 ```
 
-- จากนั้นนำ component `BoxCheat` มาทำการ `map()` ให้เรียบร้อย
+- เพิ่มข้อมูล `listStudent` อีก 18 คน
+- จากนั้นนำ component `StudentCheckGrade` มาทำการ `map()` ให้เรียบร้อย
 - อ้างอิงจากโค้ด `BoxText` ที่ทำในคลิปดังนั้นแล้วทำตามคลิปให้สมบูรณ์ก่อนแล้วค่อยทำการบ้าน
