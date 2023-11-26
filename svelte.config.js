@@ -26,7 +26,10 @@ const config = {
         "/articles/article-content",
         "/articles/article-content/commit-github",
         "/articles/article-content/format-string-python",
-        "/articles/article-content/react",
+        "/articles/article-content/react1",
+        "/articles/article-content/react2",
+        "/articles/article-content/react3",
+        "/articles/article-content/react4",
       ],
     },
     paths: {
