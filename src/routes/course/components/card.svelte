@@ -28,7 +28,10 @@
     // @ts-ignore
     btn.addEventListener("click", () => {
       if (browser) {
-        if (localStorage.getItem("password") === $passwordConfirm) {
+        if (
+          localStorage.getItem("password") === $passwordConfirm ||
+          path === "web-python-basic"
+        ) {
           goto(`${base}/course/${path}`);
         } else {
           // @ts-ignore
