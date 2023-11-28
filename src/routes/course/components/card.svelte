@@ -6,6 +6,7 @@
   import { base } from "$app/paths";
 
   import { onMount } from "svelte";
+  import { IconLogin2 } from "@tabler/icons-svelte";
   export let title = "Python Basic";
   export let img = "python-programming-language";
   export let details = "สอนพื้นฐานการเขียนโปรแกรมด้วย Python เบื้องต้น";
@@ -64,7 +65,8 @@
       id="modalPassword{path}-btn"
       aria-disabled="true"
       tabindex="-1"
-      role="button">เข้าเรียน</a
+      role="button"
+      >เข้าเรียน{path === "web-python-basic" ? "ฟรี" : ""}<IconLogin2 /></a
     >
   </div>
 </div>
