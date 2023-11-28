@@ -25,6 +25,11 @@ const data = [
     linkVideo: "2B0u1_EIlQY",
     homework: "true",
   },
+  {
+    title: "บทที่ 6 การใช้ useState() แบบ array , object ร่วมกันการประยุกต์ใช้งาน",
+    linkVideo: "1eu7Vo4lvZw",
+    homework: "true",
+  },
 
 
 
