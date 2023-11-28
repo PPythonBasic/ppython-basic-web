@@ -50,7 +50,7 @@
       </div>
     </div>
     <article
-      class="prose-sm w-auto xl:w-[70rem] flex flex-col justify-center overflow-auto lg:prose-lg m-4"
+      class="prose-sm w-full xl:w-[70rem] flex flex-col justify-center overflow-auto lg:prose-lg m-4"
     >
       <SvelteMarkdown {source} renderers={{ link: Link }} />
     </article>
