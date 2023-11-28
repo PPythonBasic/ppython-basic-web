@@ -26,7 +26,11 @@
 
       <div
         class="collapse bg-base-200 max-w-xs lg:max-w-full lg:w-[60rem]"
-        style="display: {homework === '' ? 'none' : ''}"
+        style="display: {homework === 'false'
+          ? 'none'
+          : homework === ''
+            ? 'none'
+            : ''}"
       >
         <input type="checkbox" class="peer" />
         <div
