@@ -6,6 +6,53 @@
   import markdownList from "$lib/data/markdown/markdownList";
   import { IconArticle, IconHome, IconTextCaption } from "@tabler/icons-svelte";
   import Link from "../../../../renderers/Link.svelte";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    speechSynthesis.onvoiceschanged = () => {
+      const voices = speechSynthesis.getVoices();
+      console.log(voices);
+    };
+  });
+  const markdownToText = (markdown: string) => {
+    // Remove headers (e.g. ## Header)
+    markdown = markdown.replace(/#{1,6}\s+/g, "");
+
+    // Remove emphasis (e.g. *italic* or **bold**)
+    markdown = markdown.replace(/\*{1,2}(.*?)\*{1,2}/g, "$1");
+
+    // Remove code blocks (e.g. ```javascript ... ```)
+    markdown = markdown.replace(/```[\s\S]*?```/g, "");
+
+    // Remove inline code (e.g. `code`)
+    markdown = markdown.replace(/`([^`]+)`/g, "$1");
+
+    // Remove links (e.g. [text](url))
+    markdown = markdown.replace(/\[(.*?)\]\(.*?\)/g, "$1");
+
+    // Remove images (e.g. ![alt text](image url))
+    markdown = markdown.replace(/!\[.*?\]\(.*?\)/g, "");
+
+    // Remove unordered lists (e.g. * item)
+    markdown = markdown.replace(/\n\s*\*\s+/g, "\n- ");
+
+    // Remove ordered lists (e.g. 1. item)
+    markdown = markdown.replace(/\n\s*\d+\.\s+/g, "\n");
+
+    // Remove blockquotes (e.g. > quote)
+    markdown = markdown.replace(/\n\s*>+/g, "\n");
+
+    // Remove horizontal rules (e.g. ---)
+    markdown = markdown.replace(/\n\s*---+\s*\n/g, "\n");
+
+    // Remove line breaks
+    markdown = markdown.replace(/\n/g, " ");
+
+    // Trim leading/trailing white spaces
+    markdown = markdown.trim();
+
+    return markdown;
+  };
 </script>
 
 <svelte:head>
@@ -49,8 +96,29 @@
         </ul>
       </div>
     </div>
+    <div
+      class="flex justify-center items-center w-full gap-2 bg-base-300 p-4 m-2 rounded-lg"
+    >
+      <p>อ่านบทวามด้วยเสียง</p>
+      <button
+        on:click={() => {
+          const msg = new SpeechSynthesisUtterance();
+          msg;
+          msg.lang = "th";
+          msg.text = markdownToText(source);
+          msg.pitch = 0.1;
+          msg.rate = 0.6;
+          window.speechSynthesis.speak(msg);
+        }}
+        class="btn btn-sm hover:bg-base-100">เล่น (beta)</button
+      >
+      <!-- <button on:click={pause} class="btn btn-sm hover:bg-base-100"
+        >หยุดชั่วคราว</button
+      > -->
+    </div>
     <article
       class="prose-sm w-full xl:w-[70rem] flex flex-col justify-center overflow-auto lg:prose-lg m-4"
+      id="article"
     >
       <SvelteMarkdown {source} renderers={{ link: Link }} />
     </article>
