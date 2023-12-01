@@ -35,6 +35,11 @@ const data = [
     linkVideo: "9umtrJD4o48",
     homework: "true",
   },
+  {
+    title: "บทที่ 8 การใช้ useEffect ทั่วไป",
+    linkVideo: "Vc27Z7vWGRE",
+    homework: "true",
+  },
 
 
 
