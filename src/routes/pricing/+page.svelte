@@ -37,6 +37,10 @@
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
+        <p>เนื้อหาเขียนโปรแกรมเบื้องต้นมีให้ดูย้อนหลัง</p></span
+      >
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
         <p>Remote พาเขียน</p></span
       >
       <span class="flex items-center gap-2 text-sm"
@@ -60,6 +64,10 @@
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
         <p>สอนสดออนไลน์</p></span
+      >
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
+        <p>เนื้อหาเขียนโปรแกรมเบื้องต้นมีให้ดูย้อนหลัง</p></span
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
@@ -98,6 +106,35 @@
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
         <p>จ่ายครั้งเดียวดูได้ตลอด</p></span
+      >
+    </div>
+  </div>
+  <div class="card w-96 bg-base-300 shadow-xl lg:w-3/12 h-72">
+    <div class="card-body">
+      <span class="flex justify-between">
+        <h2 class="card-title text-white">
+          <b>สอนสร้างเว็บไซต์ด้วย React (คลิปวิดีโอ)</b>
+        </h2>
+      </span>
+      <p class="text-white"><b class="text-3xl">฿200</b></p>
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
+        <p>คลิปวิดีโอสอน</p></span
+      >
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
+        <p>มีการบ้านให้ทำ</p></span
+      >
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
+        <p>หากติดปัญหาหรือพบข้อผิดพลาดสามารถสอบถามทางไลน์ได้ตลอดเวลา</p></span
+      >
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
+        <p>
+          หากต้องการให้สอนสด ชั่วโมงละ 100 บาท แต่เนื้อหาสอนจะเหมือนในคลิป
+          แต่อาจจะเสริมเติมให้
+        </p></span
       >
     </div>
   </div>
