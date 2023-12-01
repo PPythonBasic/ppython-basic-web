@@ -31,7 +31,7 @@ const data = [
     homework: "true",
   },
   {
-    title: "บทที่ 6 การใช้ useRef",
+    title: "บทที่ 7 การใช้ useRef",
     linkVideo: "9umtrJD4o48",
     homework: "true",
   },
