@@ -5,12 +5,14 @@
 </script>
 
 <MetaTitle title="บทความทั้งหมด" />
-<div class="flex flex-row w-96 justify-end my-4">
+<div class="flex flex-row justify-end my-4">
   <h1 class="text-sm">จำนวน {$markdownList.length} บทความ</h1>
 </div>
-<div class="flex flex-col items-center justify-center">
+<div
+  class="flex flex-col lg:grid lg:grid-cols-3 lg:gap-4 items-center justify-center"
+>
   {#each $markdownList as { title, path }}
     <ArticleCard {title} img={path} pathToGo={path} />
-    <div class="divider w-96"></div>
+    <div class="divider w-96 lg:hidden"></div>
   {/each}
 </div>

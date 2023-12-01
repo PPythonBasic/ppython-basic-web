@@ -32,6 +32,8 @@ const config = {
         "/articles/article-content/react4",
         "/articles/article-content/react5",
         "/articles/article-content/react6",
+        "/articles/article-content/react7",
+        "/articles/article-content/react8",
       ],
     },
     paths: {

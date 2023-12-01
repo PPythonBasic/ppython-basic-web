@@ -63,7 +63,8 @@ function App() {
   return (
     <div className="App">
            {" "}
-      <h1>{message === "Hello!" ? 'The message was "Hello!"' : message}</h1>   {" "}
+      <h1>{message === "Hello!" ? 'The message was "Hello!"' : message}</h1> 
+       {" "}
     </div>
   );
 }
@@ -82,7 +83,8 @@ function App() {
   return (
     <div className="App">
            {" "}
-      <h1>{message === "Hello!" ? 'The message was "Hello!"' : message}</h1>   {" "}
+      <h1>{message === "Hello!" ? 'The message was "Hello!"' : message}</h1> 
+       {" "}
     </div>
   );
 }
@@ -91,3 +93,5 @@ export default App;
 ```
 
 ![](https://cdn.discordapp.com/attachments/372372440334073859/1178471565621477476/Untitled202.png?ex=6576442c&is=6563cf2c&hm=bf5374d22357600c44f2152c6458c6340f2c539aee2fc6b9b85fa112a258f297&)
+
+[บทความถัดไป React: การจัดการเหตุการณ์ (event) ของผู้ใช้](https://ppythonbasic.github.io/ppython-basic-web/articles/article-content/react7)
