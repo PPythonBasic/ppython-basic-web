@@ -9,8 +9,14 @@ import react5 from "$lib/data/markdown/reacts/react5.md?raw";
 import react6 from "$lib/data/markdown/reacts/react6.md?raw";
 import react7 from "$lib/data/markdown/reacts/react7.md?raw";
 import react8 from "$lib/data/markdown/reacts/react8.md?raw";
+import react9 from "$lib/data/markdown/reacts/react9.md?raw";
 
 const articlesMarkDown = [
+    {
+        title: "9. React: Component props พร็อพของคอมโพเนนต์",
+        path: "react9",
+        source: react9
+    },
     {
         title: "8. React: การจัดการ state",
         path: "react8",
