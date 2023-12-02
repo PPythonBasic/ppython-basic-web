@@ -71,3 +71,5 @@ const [persons, setPersons] = useState([
   { name: "Saman", score: 7 },
 ]);
 ```
+
+[บทความถัดไป React: Component props พร็อพของคอมโพเนนต์](https://ppythonbasic.github.io/ppython-basic-web/articles/article-content/react9)

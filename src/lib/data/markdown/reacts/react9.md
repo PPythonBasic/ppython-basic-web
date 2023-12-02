@@ -111,5 +111,3 @@ const WelcomeMessage = ({ children }) => {
   return <p>{children}</p>;
 };
 ```
-
-[บทความถัดไป React: Component props พร็อพของคอมโพเนนต์](https://ppythonbasic.github.io/ppython-basic-web/articles/article-content/react9)
