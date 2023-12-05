@@ -10,8 +10,14 @@ import react6 from "$lib/data/markdown/reacts/react6.md?raw";
 import react7 from "$lib/data/markdown/reacts/react7.md?raw";
 import react8 from "$lib/data/markdown/reacts/react8.md?raw";
 import react9 from "$lib/data/markdown/reacts/react9.md?raw";
+import react10 from "$lib/data/markdown/reacts/react10.md?raw";
 
 const articlesMarkDown = [
+    {
+        title: "10. React: Data flow (การไหลของข้อมูล)",
+        path: "react10",
+        source: react10
+    },
     {
         title: "9. React: Component props พร็อพของคอมโพเนนต์",
         path: "react9",

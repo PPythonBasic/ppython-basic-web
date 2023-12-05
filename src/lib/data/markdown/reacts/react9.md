@@ -111,3 +111,5 @@ const WelcomeMessage = ({ children }) => {
   return <p>{children}</p>;
 };
 ```
+
+[บทความถัดไป React: Data flow (การไหลของข้อมูล)](https://ppythonbasic.github.io/ppython-basic-web/articles/article-content/react10)
