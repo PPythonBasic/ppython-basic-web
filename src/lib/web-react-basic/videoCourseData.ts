@@ -40,6 +40,11 @@ const data = [
     linkVideo: "Vc27Z7vWGRE",
     homework: "true",
   },
+  {
+    title: "บทที่ 9 การใช้ useEffect() กับ API",
+    linkVideo: "OqbHfwFsXzQ",
+    homework: "true",
+  },
 
 
 

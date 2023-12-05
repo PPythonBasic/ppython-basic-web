@@ -7,7 +7,8 @@ import reactHomeWork5 from "$lib/web-react-basic/home-work-5.md?raw";
 import reactHomeWork6 from "$lib/web-react-basic/home-work-6.md?raw";
 import reactHomeWork7 from "$lib/web-react-basic/home-work-7.md?raw";
 import reactHomeWork8 from "$lib/web-react-basic/home-work-8.md?raw";
-const reactHomeWorkMarkDown = [reactHomeWork1, reactHomeWork2, reactHomeWork3, reactHomeWork4, reactHomeWork5, reactHomeWork6, reactHomeWork7, reactHomeWork8];
+import reactHomeWork9 from "$lib/web-react-basic/home-work-9.md?raw";
+const reactHomeWorkMarkDown = [reactHomeWork1, reactHomeWork2, reactHomeWork3, reactHomeWork4, reactHomeWork5, reactHomeWork6, reactHomeWork7, reactHomeWork8, reactHomeWork9];
 
 export default writable(reactHomeWorkMarkDown)
 
