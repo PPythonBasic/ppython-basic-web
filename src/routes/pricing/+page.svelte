@@ -94,7 +94,7 @@
           <b>เหมาเนื้อหาทั้งหมด</b>
         </h2>
       </span>
-      <p class="text-white"><b class="text-3xl">฿500</b></p>
+      <p class="text-white"><b class="text-3xl">฿1000</b></p>
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
         <p>วิดีโอดูได้ทุกเวลา</p></span
@@ -116,7 +116,7 @@
           <b>สอนสร้างเว็บไซต์ด้วย React (คลิปวิดีโอ)</b>
         </h2>
       </span>
-      <p class="text-white"><b class="text-3xl">฿200</b></p>
+      <p class="text-white"><b class="text-3xl">฿300</b></p>
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
         <p>คลิปวิดีโอสอน</p></span
