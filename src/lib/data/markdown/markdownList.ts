@@ -65,6 +65,12 @@ const articlesMarkDown = [
         source: react1
     },
     {
+        title: "คำศัพท์ย่อในโลกโอเพ่นซอร์สและการพัฒนาซอฟต์แวร์",
+        path: "github-comments",
+        source: github_comments
+    },
+
+    {
         title: "ข้อความ Commit แบบ Semantic",
         path: "commit-github",
         source: commit_github

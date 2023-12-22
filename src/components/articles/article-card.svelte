@@ -14,7 +14,7 @@
 </script>
 
 {#if data === ""}
-  <div class="flex flex-col gap-4 w-[22rem] lg:w-[33rem] lg:h-96">
+  <div class="flex flex-col gap-4 w-[22rem] lg:w-[20rem] xl:w-[33rem] lg:h-96">
     <div class="skeleton h-32 w-full lg:h-96"></div>
     <div class="skeleton h-4 w-4/5"></div>
     <div class="skeleton h-4 w-full"></div>
@@ -22,7 +22,7 @@
   </div>
 {:else}
   <div
-    class="card card-compact w-[22rem] lg:w-[33rem] h-64 lg:h-96 bg-base-100 shadow-xl border border-base-content"
+    class="card card-compact w-[22rem] lg:w-[20rem] xl:w-[33rem] h-64 lg:h-96 bg-base-100 shadow-xl border border-base-content"
   >
     <figure>
       <img src={data} alt={title} class="w-full" />
