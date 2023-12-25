@@ -2,6 +2,7 @@ import { writable } from 'svelte/store';
 import commit_github from "$lib/data/markdown/commit-github.md?raw";
 import format_string_python from "$lib/data/markdown/format-string-python.md?raw";
 import github_comments from "$lib/data/markdown/github-comments.md?raw";
+import github_branch from "$lib/data/markdown/github-branch.md?raw";
 import react1 from "$lib/data/markdown/reacts/react1.md?raw";
 import react2 from "$lib/data/markdown/reacts/react2.md?raw";
 import react3 from "$lib/data/markdown/reacts/react3.md?raw";
@@ -68,6 +69,11 @@ const articlesMarkDown = [
         title: "คำศัพท์ย่อในโลกโอเพ่นซอร์สและการพัฒนาซอฟต์แวร์",
         path: "github-comments",
         source: github_comments
+    },
+    {
+        title: "การใช้งาน Github Branch",
+        path: "github-branch",
+        source: github_branch
     },
 
     {
