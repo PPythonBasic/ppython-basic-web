@@ -83,29 +83,7 @@
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
-        <p>ต่อชั่วโมงถัดไป ฿60 /ชั่วโมง</p></span
-      >
-    </div>
-  </div>
-  <div class="card w-96 bg-base-300 shadow-xl lg:w-3/12 h-72">
-    <div class="card-body">
-      <span class="flex justify-between">
-        <h2 class="card-title text-white">
-          <b>เหมาเนื้อหาทั้งหมด</b>
-        </h2>
-      </span>
-      <p class="text-white"><b class="text-3xl">฿1000</b></p>
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>วิดีโอดูได้ทุกเวลา</p></span
-      >
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>สอบถามปัญหาได้ผ่านแชทไลน์</p></span
-      >
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>จ่ายครั้งเดียวดูได้ตลอด</p></span
+        <p>ต่อชั่วโมงถัดไป ฿70 /ชั่วโมง</p></span
       >
     </div>
   </div>
@@ -142,7 +120,9 @@
     <div class="card-body">
       <span class="flex justify-between">
         <h2 class="card-title text-white">
-          <b>รับสร้างโปรแกรม,เว็บไซต์แอพ แบบมินิโปรเจ็ค</b>
+          <b
+            >รับสร้างโปรแกรม,เว็บไซต์แอพ (แบบมินิโปรเจกต์ ที่ไม่ใช่โปรเจกต์จบ)</b
+          >
         </h2>
       </span>
       <p class="text-white"><b class="text-3xl">฿400++</b></p>

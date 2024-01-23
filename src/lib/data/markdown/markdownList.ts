@@ -78,12 +78,12 @@ const articlesMarkDown = [
 
     {
         title: "ข้อความ Commit แบบ Semantic",
-        path: "commit-github",
+        path: "github-commit-github",
         source: commit_github
     },
     {
         title: "การใช้ format string ใน Python",
-        path: "format-string-python",
+        path: "python-format-string-python",
         source: format_string_python
     }];
 

@@ -7,6 +7,17 @@
   import { IconArticle, IconHome, IconTextCaption } from "@tabler/icons-svelte";
   import Link from "../../../../renderers/Link.svelte";
   import { onMount } from "svelte";
+  import { readable } from "svelte/store";
+
+  const useState = (initValue: boolean) => {
+    let setValue;
+    const nameStore = readable(initValue, (set) => {
+      setValue = set;
+    });
+    nameStore.subscribe((value) => {});
+    return [nameStore, setValue];
+  };
+  const [start, setStart] = useState(false);
 
   onMount(() => {
     speechSynthesis.onvoiceschanged = () => {
@@ -73,7 +84,7 @@
 
 {#each $markdownList as { title, path, source }}
   {#if path === params}
-    <div class="flex flex-row w-full px-4 justify-start lg:justify-center">
+    <div class="flex flex-row px-4 justify-start lg:justify-center">
       <div class="text-sm breadcrumbs">
         <ul>
           <li>
@@ -97,24 +108,44 @@
       </div>
     </div>
     <div
-      class="flex justify-center items-center w-full gap-2 bg-base-300 p-4 m-2 rounded-lg"
+      class="hidden lg:flex justify-center items-center w-full gap-2 bg-base-300 p-4 m-2 rounded-lg"
     >
-      <p>อ่านบทวามด้วยเสียง</p>
+      <p>อ่านบทวามด้วยเสียง (beta)</p>
       <button
         on:click={() => {
           const msg = new SpeechSynthesisUtterance();
           msg;
           msg.lang = "th";
           msg.text = markdownToText(source);
-          msg.pitch = 0.1;
-          msg.rate = 0.6;
+          msg.pitch = 0.9;
+          msg.rate = 0.65;
           window.speechSynthesis.speak(msg);
+          setStart(true);
         }}
-        class="btn btn-sm hover:bg-base-100">เล่น (beta)</button
+        class="btn btn-sm hover:bg-base-100 {$start && 'btn-disabled'}"
+        >เล่น</button
       >
-      <!-- <button on:click={pause} class="btn btn-sm hover:bg-base-100"
+      <button
+        on:click={() => {
+          window.speechSynthesis.resume();
+        }}
+        class="btn btn-sm hover:bg-base-100 {!$start && 'btn-disabled'}"
+        >เล่นต่อ</button
+      >
+      <button
+        on:click={() => {
+          window.speechSynthesis.pause();
+        }}
+        class="btn btn-sm hover:bg-base-100 {!$start && 'btn-disabled'}"
         >หยุดชั่วคราว</button
-      > -->
+      >
+      <button
+        on:click={() => {
+          window.speechSynthesis.cancel();
+          setStart(false);
+        }}
+        class="btn btn-sm hover:bg-base-100">หยุด</button
+      >
     </div>
     <article
       class="prose-sm w-full xl:w-[70rem] flex flex-col justify-center overflow-auto lg:prose-lg m-4"
