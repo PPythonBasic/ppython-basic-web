@@ -24,16 +24,12 @@
   <div class="card w-96 bg-base-300 shadow-xl lg:w-3/12 h-72">
     <div class="card-body">
       <span class="flex justify-between">
-        <h2 class="card-title text-white"><b>เริ่มต้น</b></h2>
+        <h2 class="card-title text-white"><b>เริ่มต้น Python</b></h2>
       </span>
-      <p class="text-white"><b class="text-3xl">฿100</b> /ชั่วโมง</p>
+      <p class="text-white"><b class="text-3xl">฿150</b> /ชั่วโมง</p>
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
         <p>สอนสดออนไลน์</p></span
-      >
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>ติวข้อสอบ</p></span
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
@@ -47,20 +43,14 @@
         ><IconChecks size={16} class="text-success" />
         <p>มีการบ้านให้ฝึกฝน</p></span
       >
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>ต่อชั่วโมงถัดไป ฿100 /ชั่วโมง</p></span
-      >
     </div>
   </div>
   <div class="card w-96 bg-base-300 shadow-xl lg:w-3/12 h-72">
     <div class="card-body">
       <span class="flex justify-between">
-        <h2 class="card-title text-white">
-          <b>จองมากกว่า 2 ชั่วโมง</b>
-        </h2>
+        <h2 class="card-title text-white"><b>สร้าง API ด้วย Python</b></h2>
       </span>
-      <p class="text-white"><b class="text-3xl">฿100</b> /ชั่วโมง</p>
+      <p class="text-white"><b class="text-3xl">฿150</b> /ชั่วโมง</p>
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
         <p>สอนสดออนไลน์</p></span
@@ -71,7 +61,27 @@
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
-        <p>ติวข้อสอบ</p></span
+        <p>Remote พาเขียน</p></span
+      >
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
+        <p>มีการบ้านให้ฝึกฝน</p></span
+      >
+    </div>
+  </div>
+  <div class="card w-96 bg-base-300 shadow-xl lg:w-3/12 h-72">
+    <div class="card-body">
+      <span class="flex justify-between">
+        <h2 class="card-title text-white"><b>Go เบื้องต้น</b></h2>
+      </span>
+      <p class="text-white"><b class="text-3xl">฿250</b> /ชั่วโมง</p>
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
+        <p>สอนสดออนไลน์</p></span
+      >
+      <span class="flex items-center gap-2 text-sm"
+        ><IconChecks size={16} class="text-success" />
+        <p>เนื้อหาเขียนโปรแกรมเบื้องต้นมีให้ดูย้อนหลัง</p></span
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
@@ -81,62 +91,31 @@
         ><IconChecks size={16} class="text-success" />
         <p>มีการบ้านให้ฝึกฝน</p></span
       >
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>ต่อชั่วโมงถัดไป ฿70 /ชั่วโมง</p></span
-      >
     </div>
   </div>
   <div class="card w-96 bg-base-300 shadow-xl lg:w-3/12 h-72">
     <div class="card-body">
       <span class="flex justify-between">
         <h2 class="card-title text-white">
-          <b>สอนสร้างเว็บไซต์ด้วย React (คลิปวิดีโอ)</b>
+          <b>HTML/JS/React</b>
         </h2>
       </span>
-      <p class="text-white"><b class="text-3xl">฿300</b></p>
+      <p class="text-white"><b class="text-3xl">฿250</b></p>
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
-        <p>คลิปวิดีโอสอน</p></span
+        <p>สอนสดออนไลน์</p></span
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
-        <p>มีการบ้านให้ทำ</p></span
+        <p>เนื้อหาเขียนโปรแกรมเบื้องต้นมีให้ดูย้อนหลัง</p></span
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
-        <p>หากติดปัญหาหรือพบข้อผิดพลาดสามารถสอบถามทางไลน์ได้ตลอดเวลา</p></span
+        <p>Remote พาเขียน</p></span
       >
       <span class="flex items-center gap-2 text-sm"
         ><IconChecks size={16} class="text-success" />
-        <p>
-          หากต้องการให้สอนสด ชั่วโมงละ 100 บาท แต่เนื้อหาสอนจะเหมือนในคลิป
-          แต่อาจจะเสริมเติมให้
-        </p></span
-      >
-    </div>
-  </div>
-  <div class="card w-96 bg-base-300 shadow-xl lg:w-3/12 h-72">
-    <div class="card-body">
-      <span class="flex justify-between">
-        <h2 class="card-title text-white">
-          <b
-            >รับสร้างโปรแกรม,เว็บไซต์แอพ (แบบมินิโปรเจกต์ ที่ไม่ใช่โปรเจกต์จบ)</b
-          >
-        </h2>
-      </span>
-      <p class="text-white"><b class="text-3xl">฿400++</b></p>
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>มีซอร์สโค้ดให้</p></span
-      >
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>มีคลิปอธิบายการทำงานของโปรแกรม</p></span
-      >
-      <span class="flex items-center gap-2 text-sm"
-        ><IconChecks size={16} class="text-success" />
-        <p>มัดจับ 100 บาท งานเสร็จสามารถโอนมาทีหลังได้</p></span
+        <p>มีการบ้านให้ฝึกฝน</p></span
       >
     </div>
   </div>
