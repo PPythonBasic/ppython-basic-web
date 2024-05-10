@@ -6,7 +6,7 @@
   <div class="flex-1">
     <a href="{base}/" class="btn btn-ghost normal-case text-xl h-16">
       <div class="flex flex-col">
-        <p>Ppython Basic</p>
+        <p>Developer Basic</p>
         <p class="text-[12px]">เพราะพื้นฐานสำคัญที่สุด</p>
       </div>
     </a>

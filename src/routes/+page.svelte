@@ -11,14 +11,14 @@
         alt="logo"
         class="w-32 rounded-full"
       />
-      <h1 class="text-2xl md:text-5xl font-bold py-4">Ppython Basic</h1>
+      <h1 class="text-2xl md:text-5xl font-bold py-4">Developer Basic</h1>
       <iframe
         class="w-full h-64 lg:w-[40rem] lg:h-[22rem] rounded-lg"
         width="100%"
         src="https://www.youtube.com/embed/XHzJAOPaFrs"
         frameborder="0"
         allowfullscreen
-        title="Ppython Basic"
+        title="Developer Basic"
       />
       <Modal />
 
