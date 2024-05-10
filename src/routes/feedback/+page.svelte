@@ -15,7 +15,7 @@
   let datas: any = [];
   onMount(async () => {
     const res = await fetch(
-      `https://ppythonbasic.github.io/feedback/feedback.json`
+      `https://ppythonbasic.github.io/feedback/feedback.json`,
     );
     datas = await res.json();
   });
@@ -24,10 +24,14 @@
 <svelte:head>
   <title>การตอบรับ</title>
 </svelte:head>
-<div class="m-12">
+<div class="flex flex-wrap justify-center m-12 gap-12">
   <h1 class="text-3xl text-center"><b>การตอบรับจากผู้เรียน</b></h1>
+  <a
+    class="btn btn-primary text-white"
+    href="https://forms.gle/jbWDVx1kMpmphByf7">เพิ่ม feedback</a
+  >
 </div>
-<div class="flex flex-wrap gap-4 justify-center items-center">
+<div class="flex flex-wrap gap-4 justify-center items-center m-4">
   {#each datas as item}
     <div class="card w-96 bg-base-300 shadow-xl">
       <div class="card-body">
