@@ -33,7 +33,7 @@ jobs:
       - name: build
         env:
           BASE_PATH: "/${{ github.event.repository.name }}"
-          VITE_PASSWORD: ${{ secrets.VITE_PASSWORD }}
+          VITE_PASSWORD: ppython
         run: |
           npm run build
 
